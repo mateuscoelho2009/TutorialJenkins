@@ -1,0 +1,69 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.tutorial</groupId>
+  <artifactId>quickstart</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>jar</packaging>
+
+  <name>quickstart</name>
+  <url>http://maven.apache.org</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+  	<dependency>
+    	<groupId>info.cukes</groupId>
+ 	    <artifactId>cucumber-java</artifactId>
+    	<version>1.1.8</version>
+        <scope>test</scope>
+    </dependency>
+    <dependency>
+        <groupId>info.cukes</groupId>
+        <artifactId>cucumber-junit</artifactId>
+        <version>1.1.8</version>
+        <scope>test</scope>
+    </dependency>
+    
+    <!-- https://mvnrepository.com/artifact/net.praqma/junit-tools -->
+	<!-- <dependency>
+	    <groupId>net.praqma</groupId>
+	    <artifactId>junit-tools</artifactId>
+	    <version>0.1.0</version>
+	</dependency> -->
+  
+    <!-- https://mvnrepository.com/artifact/org.jmockit/jmockit -->
+	<dependency>
+	    <groupId>org.jmockit</groupId>
+	    <artifactId>jmockit</artifactId>
+	    <version>1.9</version>
+	    <scope>test</scope>
+	</dependency>
+    <dependency>
+      	<groupId>junit</groupId>
+      	<artifactId>junit</artifactId>
+     	<version>4.11</version>
+      	<scope>test</scope>
+    </dependency>
+  </dependencies>
+  
+  <!-- Maybe the following line is necessary -->
+  <!--<build>
+        <plugins>
+            <plugin>
+                <artifactId>
+                  	maven-compiler-plugin
+                </artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.7</source>
+                    <target>1.7</target>
+                    <encoding>UTF-8</encoding>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>-->
+</project>
